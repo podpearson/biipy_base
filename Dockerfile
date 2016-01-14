@@ -101,9 +101,4 @@ RUN cd sip-4.16.9 && python3.5 configure.py && make && make install
 RUN curl -L -O http://sourceforge.net/projects/pyqt/files/PyQt4/PyQt-4.11.4/PyQt-x11-gpl-4.11.4.tar.gz
 RUN tar -xvzf PyQt-x11-gpl-4.11.4.tar.gz
 
-# Make directories to mount volumes
-RUN mkdir /data
-RUN mkdir /lustre
-RUN mkdir /nfs
-
 CMD ["/bin/bash"]
